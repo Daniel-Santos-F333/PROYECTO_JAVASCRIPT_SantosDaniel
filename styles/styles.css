@@ -29,6 +29,7 @@ header{
     flex-direction: row;
     align-items: center;
     padding-right: 3vw;
+    width: auto;
 }
 
 .portalName img{
@@ -50,4 +51,7 @@ header{
 .logoUser .down {
     width: 1vi;
     margin-left: 0.5vw;
+}
+.logoUser :hover{
+    background-color: antiquewhite;
 }
