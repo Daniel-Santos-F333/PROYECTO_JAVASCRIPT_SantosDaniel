@@ -1,3 +1,53 @@
 body{
-    width: 100vi;
+    margin: 0;
+}
+
+header{
+    background-color: #303c54;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.portalName{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vw;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5vw;
+}
+
+.logoUser{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 3vw;
+}
+
+.portalName img{
+    width: 5vw;
+    height: 10vh;
+    margin-right: -1vw;
+}
+
+.portalName h1{
+    font-size: 1.5rem;
+}
+
+.logoUser .jhonsito{
+    width: 5vi;
+    height: 3vi;
+    margin-right: -0.5vw;
+}
+
+.logoUser .down {
+    width: 1vi;
+    margin-left: 0.5vw;
 }
