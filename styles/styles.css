@@ -24,7 +24,7 @@ header{
     padding-left: 5vw;
 }
 
-.logoUser{
+.pestañaUser{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,16 +42,22 @@ header{
     font-size: 1.5rem;
 }
 
-.logoUser .jhonsito{
+.jhonsito{
     width: 5vi;
     height: 3vi;
     margin-right: -0.5vw;
 }
 
-.logoUser .down {
+.down {
     width: 1vi;
     margin-left: 0.5vw;
 }
-.logoUser :hover{
+.pestañaUser :hover{
     background-color: antiquewhite;
+}
+
+.contenidoUser{
+    display: flex;
+    flex-direction: row;
+    
 }
