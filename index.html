@@ -16,20 +16,24 @@
     <div class="bgImg">
         <img src="./resources/Proyecto_nuevo.png" alt="fondo" class="fondo">
     </div>
-    <div class="formLogin">
-        <form class="formulario" action="">
-            <label for="userName">Nombre de usuario</label>
-            <br>
-            <input id="contraseña" class="userName" type="text" placeholder="Nombre de usuario">
-            <br>
-            <br>
-            <label for="contraseña">Contraseña</label>
-            <br>
-            <input id="contraseña" class="contraseña" type="password" placeholder="Contraseña">
-            <br>
-            <br>
-            <input type="button" value="Acceder" class="btn btn-primary">
-        </form>
+    <div class="formContainer">
+        <div class="formLogin">
+            <form>
+                <div class="mb-3">
+                    <h4>Accede a la plataforma</h4>
+                    <label for="exampleInputEmail1" class="form-label">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Acceder</button>
+                <br>
+                <br>
+                <a class="recoverPassword" href="">¿Olvidó su usuario o contraseña?</a>
+                </form>
+        </div>
     </div>
 </body>
 </html>

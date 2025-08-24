@@ -28,7 +28,32 @@ header{
     font-size: 1.5vw;
 }
 
-.fondo {
-    width: 100vw;
+.bgImg{
+    position: fixed;
+    z-index: -1;
 }
 
+.fondo {
+    width: 100vw;
+    height: 70vh;
+}
+
+.formContainer{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10vw;
+}
+
+.formLogin {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 21vw;
+}
+
+.recoverPassword{
+    text-decoration: none;
+}
