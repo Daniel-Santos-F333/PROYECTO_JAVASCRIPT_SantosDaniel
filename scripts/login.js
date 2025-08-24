@@ -19,3 +19,11 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 
   console.log("Inputs válidos");
 });
+
+document.getElementById("username").addEventListener("input", () => {
+  document.getElementById("errorMessage").textContent = "";
+});
+
+document.getElementById("password").addEventListener("input", () => {
+  document.getElementById("errorMessage").textContent = "";
+});
