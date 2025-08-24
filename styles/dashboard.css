@@ -1,5 +1,4 @@
 body{
-    margin: "none";
 }
 
 header{
@@ -60,4 +59,28 @@ header{
     display: flex;
     flex-direction: row;
     
+}
+
+.mainContainer{
+    justify-content: center;
+    display: flex;
+}
+.mainContent{
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    height: 80vh;
+}
+
+.izquierda{
+    width: 15vw;
+}
+
+.derecha{
+    width: 70vw;
+}
+.itemsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
