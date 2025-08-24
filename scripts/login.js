@@ -39,7 +39,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
             ) {
                 found = true;
                 console.log("Usuario autenticado:", user);
-                window.location.href = '/pages/dashboard.html';
+                window.location.href = './pages/dashboard.html';
             }
         });
 
