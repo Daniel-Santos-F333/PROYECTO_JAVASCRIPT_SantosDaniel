@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KiwiCode</title>
     <link rel="stylesheet" href="./styles/login.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="portalName">
-            <img class="kiwiLogo" src="./resources/Removal-942.png" alt="">
-            <h1>Kiwi<br>Code</h1>
-    </header>
-    <div class="bgImg">
-        <img src="./resources/Proyecto_nuevo.png" alt="fondo" class="fondo">
-    </div>
-    <div class="formContainer">
-        <div class="formLogin">
-            <form>
-                <div class="mb-3">
-                    <h4>Accede a la plataforma</h4>
-                    <label for="exampleInputEmail1" class="form-label">Nombre de usuario</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Acceder</button>
-                <br>
-                <br>
-                <a class="recoverPassword" href="">¿Olvidó su usuario o contraseña?</a>
+    <div class="pageWrapper"> 
+
+        <header>
+            <div class="portalName">
+                <img class="kiwiLogo" src="./resources/Removal-942.png" alt="">
+                <h1>Kiwi<br>Code</h1>
+            </div>
+        </header>
+
+        <div class="formContainer">
+            <div class="formLogin">
+                <form>
+                    <div class="mb-3">
+                        <h4>Accede a la plataforma</h4>
+                        <label for="exampleInputEmail1" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Acceder</button>
+                    <br><br>
+                    <a class="recoverPassword" href="">¿Olvidó su usuario o contraseña?</a>
                 </form>
+            </div>
         </div>
-    </div>
+
+        <footer class="footer">
+            <div class="footerLeft">
+                <img src="./resources/Removal-942.png" alt="Logo" class="footerLogo">
+                <span>KiwiCode</span>
+            </div>
+            <div class="footerCenter">
+                <p>© 2025 KiwiCode. Todos los derechos reservados.</p>
+            </div>
+            <div class="footerRight">
+                <a href="#">Contact Us</a>
+            </div>
+        </footer>
+
+    </div> 
 </body>
 </html>
