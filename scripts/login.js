@@ -30,7 +30,22 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
   }
 
   fetchUsers().then(users => {
-      console.log("Usuarios obtenidos:", users);
+      let found = false;
+
+      users.forEach(user => {
+          if (
+              user.name.toLowerCase() === username.toLowerCase() &&
+              user.password === password
+          ) {
+              found = true;
+              console.log("Usuario autenticado:", user);
+              window.location.href = '/pages/dashboard.html';
+          }
+      });
+
+      if (!found) {
+          errorMessage.textContent = "Usuario o contraseña incorrecto";
+      }
   });
 });
 
