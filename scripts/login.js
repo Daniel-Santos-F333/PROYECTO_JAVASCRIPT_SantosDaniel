@@ -17,7 +17,21 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
       return;
   }
 
-  console.log("Inputs válidos");
+  async function fetchUsers() {
+      try {
+          const res = await fetch('https://68aa9a2b909a5835049c94fe.mockapi.io/users');
+          const data = await res.json();
+          return data;
+      } catch (error) {
+          console.error("Error al conectar con la API:", error);
+          errorMessage.textContent = "Error al conectarse con el servidor.";
+          return [];
+      }
+  }
+
+  fetchUsers().then(users => {
+      console.log("Usuarios obtenidos:", users);
+  });
 });
 
 document.getElementById("username").addEventListener("input", () => {
