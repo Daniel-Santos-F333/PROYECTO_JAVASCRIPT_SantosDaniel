@@ -8,7 +8,14 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 
   const username = document.getElementById("username").value.trim();
   const password = document.getElementById("password").value;
+  const errorMessage = document.getElementById("errorMessage");
 
-  console.log("Usuario:", username);
-  console.log("Contraseña:", password);
+  errorMessage.textContent = "";
+
+  if (!username || !password) {
+      errorMessage.textContent = "Por favor complete todos los campos.";
+      return;
+  }
+
+  console.log("Inputs válidos");
 });
